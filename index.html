@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating hearts background -->
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- STAGE 1: Login -->
+  <section class="stage active" id="stage-login">
+    <div class="card">
+      <h1>🔐 A Secret For You</h1>
+      <p class="subtitle">Only you know the way in...</p>
+      <input type="text" id="username" placeholder="Username" autocomplete="off" />
+      <input type="password" id="password" placeholder="Password" autocomplete="off" />
+      <button onclick="checkLogin()">Enter</button>
+      <p class="error" id="loginError"></p>
+    </div>
+  </section>
+
+  <!-- STAGE 2: Love Day -->
+  <section class="stage" id="stage-loveday">
+    <div class="card">
+      <h1>💌 One More Step</h1>
+      <p class="subtitle">When did our forever begin? (DD/MM)</p>
+      <input type="text" id="loveday" placeholder="" autocomplete="off" />
+      <button onclick="checkLoveDay()">Unlock My Heart</button>
+      <p class="error" id="loveDayError"></p>
+    </div>
+  </section>
+
+  <!-- STAGE 3: The Letter -->
+  <section class="stage" id="stage-letter">
+    <div class="envelope" id="envelope" onclick="openEnvelope()">
+      <div class="flap"></div>
+      <div class="body"></div>
+      <div class="seal">❤</div>
+      <p class="tap-hint">Tap to open</p>
+    </div>
+
+    <div class="photo-collage" aria-hidden="true">
+      <div class="photo-circle photo-1"></div>
+      <div class="photo-circle photo-2"></div>
+      <div class="photo-circle photo-3"></div>
+      <div class="photo-circle photo-4"></div>
+      <div class="photo-circle photo-5"></div>
+      <div class="photo-circle photo-6"></div>
+    </div>
+
+    <div class="letter-wrap" id="letterWrap">
+      <div class="letter">
+        <h2>My Love,</h2>
+
+        <p>
+          I've been sitting here trying to figure out how to start this, and honestly,
+          nothing feels big enough. So I'm just going to say it the way it is: I love you.
+          Not the easy kind. The real kind. The kind that doesn't go anywhere when things
+          get hard.
+        </p>
+
+        <p>
+          Today is 11/11, and everyone calls it the day of love. But I keep thinking
+          my day of love isn't today. It's the 28th of November. That's the day everything
+          changed for me, the day I realized I had found something I never wanted to lose.
+          I still remember how it felt standing there with you, feeling like time slowed down,
+          like the world had finally made sense. I didn't know it then, but that was the day
+          my life quietly split into "before you" and "after you."
+        </p>
+
+        <p>
+          And I need you to hear this part, because I don't think you hear it enough.
+          You are a warrior. I'm not saying that to be sweet, I'm saying it because I've
+          watched you. I've seen you carry things that would flatten most people, and you did it
+          without turning cold, without losing your kindness, without becoming someone else.
+          The way you keep going, even when life is heavy, is one of the strongest things I've
+          ever seen. That's not normal strength. That's something rare. And I hope you know that
+          I see it, even on the days you don't feel strong at all, especially on those days.
+        </p>
+
+        <p>
+          I want to keep going with you. Not just the good parts, the quiet Sundays, the silly
+          arguments, the days when life is loud and neither of us has the right words. I want all
+          of it, with you. I want to wake up next to you when we're old and still be a little amazed
+          that I get to. I want to build a life with you, a home full of love, a future full of dreams,
+          and every little thing that makes us us. I want to look back one day and know we did this together.
+        </p>
+
+        <p>
+          You're my home. Not a place. When everything else is loud and messy, you're the one thing
+          that makes sense to me. I don't want a life that just has you in it. I want a life that's
+          built around you. Around us.
+        </p>
+
+        <p>
+          So this is me, on the day of love, telling you the truth: I'm not going anywhere. I chose you,
+          and I keep choosing you, every single day. Thank you for being the strongest, softest, most stubborn,
+          most beautiful person I know. I love you more than I know how to say, and I'll spend the rest of my life
+          trying to show you instead.
+        </p>
+
+        <p class="signature">Forever yours,<br/>❤ Your Man ❤</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
